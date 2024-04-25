@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+ <{% extends 'base.html' %}
+
+
+ {% block main %}
+<h1></h1>
+    <div class="row">
+   <div class="card" style="width:300px">
+    <img class="card-img-top" src="{{ url_for('static', filename='IMG/'+ 'danck.jpeg') }}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Sb Dunk Nike x Stussy</h4>
+      <p class="card-text">3699₴</p>
+      <a href="#" class="btn btn-primary">Купити</a>
+    </div>
+  </div>
+
+
+
+
+
+                     <div class="card" style="width:300px">
+    <img class="card-img-top" src="{{ url_for('static', filename='IMG/'+ 'sbwhysosad.jpg') }}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Sb Dunk Why So Sad?</h4>
+      <p class="card-text">3500₴</p>
+      <a href="#" class="btn btn-primary">Купити</a>
+    </div>
+  </div>
+
+
+
+        <div class="card" style="width:300px">
+    <img class="card-img-top" src="{{ url_for('static', filename='IMG/'+ 'mummy.jpg') }}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Прокляття Фараона</h4>
+      <p class="card-text">1488₴</p>
+      <a href="#" class="btn btn-primary">Прокляття</a>
+    </div>
+  </div>
+
+
+          <div class="card" style="width:300px">
+    <img class="card-img-top" src="{{ url_for('static', filename='IMG/'+ 'gimno.jpg') }}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Данки Хто це вопше купить?</h4>
+      <p class="card-text">14488₴</p>
+      <a href="#" class="btn btn-primary">Купити</a>
+    </div>
+  </div>
+ {% endblock main %}

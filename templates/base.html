@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Pickies</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/sneekers">Кросівки</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/jeans">Джинси</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/t-shirt">Футболки</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blouse">Кофти</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Пошук">
+        <button class="btn btn-primary" type="button">Пошук</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+ {% block main %}
+  {% endblock main %}
+<footer class="footer">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <div class="footer__top">
+        <div class="container">
+            <div class="footer__contact-info">
+                <p>Телефон: +380978931918</p>
+                <p>Відвідайте нас на <a href="https://www.pickies.com/">Pickies.com</a></p>
+                <p>Отримайте підтримку на <a href="https://www.pickiessupport.com/">PickiesSupport.com</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="footer__social-links">
+                <p>Слідкуйте за нами в Instagram: <a href="https://www.instagram.com/Pickies">@Pickies</a></p>
+                <p>Приєднуйтесь до нашого каналу в Telegram: <a href="https://t.me/Pickies">@Pickies</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
