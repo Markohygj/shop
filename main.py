@@ -1,7 +1,12 @@
 from flask import Flask, render_template, request, flash
 
 app = Flask(__name__)
-
+all_products=[
+    (0,'danck.jpeg',"Sb Dunk Nike x Stussy", '3699₴'),
+    ('output.jpg','Supreme x true Religion','12499₴'),
+    ('jingo.jpg','3mp Jinco','2100₴'),
+    ('stussy t-shirt.jpg','Футболка Stussy')
+]
 @app.route("/")
 @app.route("/index")
 def index():

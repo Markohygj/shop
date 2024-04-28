@@ -10,7 +10,9 @@
     <div class="card-body">
       <h4 class="card-title">Футболка Stussy</h4>
       <p class="card-text">750₴</p>
-      <a href="#" class="btn btn-primary">Купити</a>
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Купити
+  </button>
     </div>
   </div>
 
@@ -20,9 +22,32 @@
     <div class="card-body">
       <h4 class="card-title">Футболка DC Shoes SLAYER</h4>
       <p class="card-text">1350₴</p>
-      <a href="#" class="btn btn-primary">Купити</a>
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Купити
+  </button>
     </div>
   </div>
 
+                  <div class="card" style="width:300px">
+    <img class="card-img-top" src="{{ url_for('static', filename='IMG/'+ 'palm.jpg') }}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Футболка Palm Angeles</h4>
+      <p class="card-text">2350₴</p>
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Купити
+  </button>
+    </div>
+  </div>
+
+                        <div class="card" style="width:300px">
+    <img class="card-img-top" src="{{ url_for('static', filename='IMG/'+ 'stone.jpg') }}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Футболка Stone Island</h4>
+      <p class="card-text">2500₴</p>
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Купити
+  </button>
+    </div>
+  </div>
 
  {% endblock main %}

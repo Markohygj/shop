@@ -9,7 +9,9 @@
     <div class="card-body">
       <h4 class="card-title">Supreme x true Religion</h4>
       <p class="card-text">12499₴</p>
-      <a href="#" class="btn btn-primary">Купити</a>
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Купити
+  </button>
     </div>
   </div>
 
@@ -18,9 +20,32 @@
     <div class="card-body">
       <h4 class="card-title">Зіп-худі True Religion </h4>
       <p class="card-text">2100₴</p>
-      <a href="#" class="btn btn-primary">Купити</a>
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Купити
+  </button>
     </div>
   </div>
 
+            <div class="card" style="width:300px">
+    <img class="card-img-top" src="{{ url_for('static', filename='IMG/'+ 'stussyr.jpg') }}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Зіп-худі Stussy</h4>
+      <p class="card-text">6100₴</p>
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Купити
+  </button>
+    </div>
+  </div>
+
+                        <div class="card" style="width:300px">
+    <img class="card-img-top" src="{{ url_for('static', filename='IMG/'+ 'sort.jpg') }}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Худі Sort Company</h4>
+      <p class="card-text">5100₴</p>
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Купити
+  </button>
+    </div>
+  </div>
 
 {% endblock main %}
